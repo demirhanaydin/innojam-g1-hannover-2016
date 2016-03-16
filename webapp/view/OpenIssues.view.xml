@@ -1,0 +1,68 @@
+<mvc:View
+	controllerName="jam.controller.OpenIssues"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page class="sapUiContentPadding" showNavButton="true"  navButtonPress="onNavToHome" title="{i18n&gt;title}">
+	<Table id="idProductsTable"
+		inset="false"
+		items="{
+			path: '/OpenIssues',
+			sorter: {
+				path: 'Name'
+			}
+		}">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Open Issues" level="H2"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column>
+				<Text text="ID" />
+			</Column>
+			<Column>
+				<Text text="Urgency" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				hAlign="Right">
+				<Text text="Usage" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="Assigned To" />
+			</Column>
+			<Column
+				hAlign="Center">
+				<Text text="Assigned date" />
+			</Column>
+			<Column
+				width="12em">
+				<Text text="Description" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text
+						text="{IssueID}" />
+					<Text
+						text="{Urgency}" />
+					<Text
+						text="{Usage}" />
+					<Text
+						text="{AssignedTo}" />
+					<Text
+						text="{AssignedDate}" />
+					<Text
+						text="{Description}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	</Page>
+</mvc:View>

@@ -1,0 +1,22 @@
+{
+  "milk": [{
+        "CategoryAxis": "Machine 1",
+        "Type":"null",
+        "Workload": 122
+    },
+    {
+        "CategoryAxis": "Machine 2",
+        "Type":"null",
+        "Workload": 20
+    },
+    {
+        "CategoryAxis": "Machine 3",
+        "Type":"null",
+        "Workload": 50
+    },
+    {
+        "CategoryAxis":"Total Worklad of Hans",
+        "Type":"subtotal:3",
+        "Workload":197
+    }]
+}

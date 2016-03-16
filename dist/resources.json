@@ -1,0 +1,129 @@
+{
+    "resources": [
+        {
+            "name": "view/View1.view.xml"
+        },
+        {
+            "name": "view/Implications.view.xml"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "view/OpenIssues.view.xml"
+        },
+        {
+            "name": "view/Home.view.xml"
+        },
+        {
+            "name": "view/Schedule.view.xml"
+        },
+        {
+            "name": "controller/View1.controller.js"
+        },
+        {
+            "name": "controller/ChartContainerData1.json"
+        },
+        {
+            "name": "controller/Implications.controller.js"
+        },
+        {
+            "name": "controller/OpenIssues.controller.js"
+        },
+        {
+            "name": "controller/Home.controller.js"
+        },
+        {
+            "name": "controller/Schedule.controller.js"
+        },
+        {
+            "name": "controller/ControllerOverall.js"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "mockdata/machines.json"
+        },
+        {
+            "name": "mockdata/issues.json"
+        },
+        {
+            "name": "mockdata/waterfallMedium.json"
+        },
+        {
+            "name": "mockdata/waterfallSmall.json"
+        },
+        {
+            "name": "fragments/Dialog.fragment.xml"
+        },
+        {
+            "name": "images/caution-3.jpg"
+        },
+        {
+            "name": "images/caution.jpg"
+        },
+        {
+            "name": "images/caution-2.jpg"
+        },
+        {
+            "name": "images/machine-53.jpg"
+        },
+        {
+            "name": "images/background.jpg"
+        },
+        {
+            "name": "images/implication.jpg"
+        },
+        {
+            "name": "images/issue.jpg"
+        },
+        {
+            "name": "images/performance.jpg"
+        },
+        {
+            "name": "images/schedule.jpg"
+        },
+        {
+            "name": "images/background2.png"
+        },
+        {
+            "name": "images/Bild3.jpg"
+        },
+        {
+            "name": "images/Bild4.jpg"
+        },
+        {
+            "name": "images/mLine.jpg"
+        },
+        {
+            "name": "images/mLine2.jpg"
+        },
+        {
+            "name": "Formatter.js"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "neo-app.json"
+        }
+    ]
+}

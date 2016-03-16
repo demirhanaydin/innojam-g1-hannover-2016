@@ -1,0 +1,136 @@
+{
+  "OpenIssues": [
+    {
+      "IssueID": 8,
+      "Urgency": "green",
+      "Usage": "external",
+      "AssignedTo": "Ursula Berthe",
+      "AssignedDate": "2016-01-05",
+      "Description": "car disc repairs, VW Polo V Typ 6R"
+    },
+    {
+      "Urgency": "red",
+      "IssueID": "0098",
+      "Usage": "internal",
+      "AssignedTo": "Muhammed Oezguen",
+      "AssignedDate": "2016-03-03",
+      "Description": "reorder 500 screws for machine 012"
+    },
+    {
+      "Urgency": "yellow",
+      "IssueID": "0116",
+      "Usage": "internal",
+      "AssignedTo": "Olga Gorba",
+      "AssignedDate": "2016-03-05",
+      "Description": "replace robot arm, robot ID 119"
+    },
+    {
+      "Urgency": "green",
+      "IssueID": "0419",
+      "Usage": "internal",
+      "AssignedTo": "Berta Schmitt",
+      "AssignedDate": "2016-03-12",
+      "Description": "less production material"
+    },
+    {
+      "Urgency": "red",
+      "IssueID": "0089",
+      "Usage": "internal",
+      "AssignedTo": "Muhammed Oezguen",
+      "AssignedDate": "2016-03-15",
+      "Description": "worker accident, machine ID 228"
+    },
+    {
+      "Urgency": "yellow",
+      "IssueID": "1098",
+      "Usage": "internal",
+      "AssignedTo": "Thomas Gottschalk",
+      "AssignedDate": "2016-03-20",
+      "Description": "worker 018 did not showed up to work"
+    },
+    {
+      "Urgency": "yellow",
+      "IssueID": "1098",
+      "Usage": "internal",
+      "AssignedTo": "Thomas Gottschalk",
+      "AssignedDate": "2016-03-20",
+      "Description": "refill machine oil, machine ID 022,067,110"
+    }
+  ],
+  "ClosedIssues": [
+    {
+      "Urgency": "yellow",
+      "IssueID": "1098",
+      "Usage": "internal",
+      "AssignedTo": "Thomas Meier",
+      "AssignedDate": "2016-03-20",
+      "Solving date": "2016-03-24",
+      "Description": "refill machine oil, machine ID 050-100"
+    },
+    {
+      "Urgency": "red",
+      "IssueID": "0089",
+      "Usage": "internal",
+      "AssignedTo": "Louisa Mein",
+      "AssignedDate": "2016-03-15",
+      "Solving date": "2016-03-15",
+      "Description": "worker accident, machine ID 228"
+    },
+    {
+      "Urgency": "red",
+      "IssueID": "0089",
+      "Usage": "internal",
+      "AssignedTo": "Tomski Porson",
+      "AssignedDate": "2014-11-05",
+      "Solving date": "2014-11-05",
+      "Description": "short circuit at machine 011"
+    },
+    {
+      "Urgency": "green",
+      "IssueID": "0089",
+      "Usage": "internal",
+      "AssignedTo": "Panjadi Sahi",
+      "AssignedDate": "2015-08-28",
+      "Solving date": "2015-09-02",
+      "Description": "machine delay, machine ID 983"
+    },
+    {
+      "Urgency": "green",
+      "IssueID": "0089",
+      "Usage": "internal",
+      "AssignedTo": "Tobias Gurt",
+      "AssignedDate": "2014-04-30",
+      "Solving date": "2014-05-01",
+      "Description": "order of screws delay, order no 005877829947"
+    },
+    {
+      "Urgency": "yellow",
+      "IssueID": "0089",
+      "Usage": "internal",
+      "AssignedTo": "Muhammed Oezguen",
+      "AssignedDate": "2014-04-10",
+      "Solving date": "2014-04-14",
+      "Description": "worker did not showed up to work"
+    }
+  ],
+  "NotAssignedYet": [
+    {
+      "Urgency": "green",
+      "IssueID": "0089",
+      "Usage": "external",
+      "Description": "tyre change, car VW Caddy Alltrack "
+    },
+    {
+      "Urgency": "green",
+      "IssueID": "0109",
+      "Usage": "internal",
+      "Description": "less production material"
+    },
+    {
+      "Urgency": "yellow",
+      "IssueID": "0114",
+      "Usage": "internal",
+      "Description": "replace batteries on machine 012,098,101,102"
+    }
+  ]
+}

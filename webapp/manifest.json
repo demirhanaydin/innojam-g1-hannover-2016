@@ -1,0 +1,136 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "jam",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.32.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "jam.view.View1",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "jam.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "jam.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"transition": "slide"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "appHome",
+					"target": "home"
+				},
+				{
+					"pattern": "/reports",
+					"name": "reports",
+					"target": "reports"
+				},
+				{
+					"pattern": "/implications",
+					"name": "implications",
+					"target": "implications"
+				},
+				{
+					"pattern": "/open-issues",
+					"name": "open-issues",
+					"target": "open-issues"
+				},
+				{
+					"pattern": "/schedule",
+					"name": "schedule",
+					"target": "schedule"
+				}
+			],
+			"targets": {
+				"implications": {
+					"viewName": "Implications",
+					"viewLevel": 0
+				},
+				"reports": {
+					"viewName": "View1",
+					"viewLevel": 0
+				},
+				"open-issues": {
+					"viewName": "OpenIssues",
+					"viewLevel": 0
+				},
+				"home": {
+					"viewName": "Home",
+					"viewLevel": 0
+				},
+				"schedule": {
+					"viewName": "Schedule",
+					"viewLevel": 0
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

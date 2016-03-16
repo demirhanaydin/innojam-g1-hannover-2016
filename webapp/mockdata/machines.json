@@ -1,0 +1,220 @@
+{
+	"ProductCollection": [
+		{
+			"ProductId": "#1239102",
+			"Name": "CONSIDER TO BUY A NEW MACHINE",
+			"Category": "Projector",
+			"SupplierName": "Titanium",
+			"Description": "A very powerful projector with special features for Internet usability, USB",
+			"WeightMeasure": 1467,
+			"WeightUnit": "g",
+			"Price": 856.49,
+			"CurrencyCode": "EUR",
+			"Status": "Available",
+			"Quantity": 3,
+			"UoM": "PC",
+			"Width": 51,
+			"Depth": 42,
+			"Height": 18,
+			"DimUnit": "cm",
+			"ProductPicUrl": "/images/machine-53.jpg"
+		},
+		{
+			"ProductId": "#2212121828",
+			"Name": "RETHINK MAINTENANCE SCHEDULING FOR MACHINE #53",
+			"Category": "Graphics Card",
+			"SupplierName": "Technocom",
+			"Description": "Gladiator MX: DDR2 RoHS 128MB Supporting 512MB Clock rate: 350 MHz Memory Clock: 533 MHz, Bus Type: PCI-Express, Memory Type: DDR2 Memory Bus: 32-bit Highlighted Features: DVI Out, TV Out , HDTV",
+			"WeightMeasure": 321,
+			"WeightUnit": "g",
+			"Price": 81.7,
+			"CurrencyCode": "EUR",
+			"Status": "Discontinued",
+			"Quantity": 10,
+			"UoM": "PC",
+			"Width": 34,
+			"Depth": 14,
+			"Height": 2,
+			"DimUnit": "cm",
+			"ProductPicUrl": "/images/mLine2.jpg"
+		},
+		{
+			"ProductId": "#34412121828",
+			"Name": "TAKE ACTION TO AVOID MACHINE BREAKDOWN March, 20th",
+			"Category": "Graphics Card",
+			"SupplierName": "Technocom",
+			"Description": "Gladiator MX: DDR2 RoHS 128MB Supporting 512MB Clock rate: 350 MHz Memory Clock: 533 MHz, Bus Type: PCI-Express, Memory Type: DDR2 Memory Bus: 32-bit Highlighted Features: DVI Out, TV Out , HDTV",
+			"WeightMeasure": 321,
+			"WeightUnit": "g",
+			"Price": 81.7,
+			"CurrencyCode": "EUR",
+			"Status": "Discontinued",
+			"Quantity": 10,
+			"UoM": "PC",
+			"Width": 34,
+			"Depth": 14,
+			"Height": 2,
+			"DimUnit": "cm",
+			"ProductPicUrl": "/images/Bild4.jpg"
+		},
+		{
+			"ProductId": "#K473221",
+			"Name": "3 MECHANICS ARE SICK - ADJUST WORK PACKAGES",
+			"Category": "Graphics Card",
+			"SupplierName": "Red Point Stores",
+			"Description": "Hurricane GX: DDR2 RoHS 512MB Supporting 1024MB Clock rate: 550 MHz Memory Clock: 933 MHz, Bus Type: PCI-Express, Memory Type: DDR2 Memory Bus: 64-bit Highlighted Features: DVI Out, TV-In, TV-Out, HDTV",
+			"WeightMeasure": 588,
+			"WeightUnit": "g",
+			"Price": 219,
+			"CurrencyCode": "EUR",
+			"Status": "Out of Stock",
+			"Quantity": 25,
+			"UoM": "PC",
+			"Width": 34,
+			"Depth": 14,
+			"Height": 2,
+			"DimUnit": "cm",
+			"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1072.jpg"
+		},
+		{
+			"ProductId": "#22134T",
+			"Name": "HIRE ONE MORE MECHANIC TRAIN PRODUCTION WORKERS",
+			"Category": "Accessory",
+			"SupplierName": "Technocom",
+			"Description": "Web camera, color, High-Speed USB",
+			"WeightMeasure": 700,
+			"WeightUnit": "g",
+			"Price": 59,
+			"CurrencyCode": "EUR",
+			"Status": "Available",
+			"Quantity": 22,
+			"UoM": "PC",
+			"Width": 18,
+			"Depth": 19,
+			"Height": 21,
+			"DimUnit": "cm",
+			"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1112.jpg"
+		},
+		{
+			"ProductId": "#123134T",
+			"Name": "TRAIN PRODUCTION WORKERS",
+			"Category": "Accessory",
+			"SupplierName": "Technocom",
+			"Description": "Web camera, color, High-Speed USB",
+			"WeightMeasure": 700,
+			"WeightUnit": "g",
+			"Price": 59,
+			"CurrencyCode": "EUR",
+			"Status": "Available",
+			"Quantity": 22,
+			"UoM": "PC",
+			"Width": 18,
+			"Depth": 19,
+			"Height": 21,
+			"DimUnit": "cm",
+			"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1112.jpg"
+		},
+		{
+			"ProductId": "#1231134T",
+			"Name": "ALERT",
+			"Category": "Accessory",
+			"SupplierName": "Technocom",
+			"Description": "Web camera, color, High-Speed USB",
+			"WeightMeasure": 700,
+			"WeightUnit": "g",
+			"Price": 59,
+			"CurrencyCode": "EUR",
+			"Status": "Available",
+			"Quantity": 22,
+			"UoM": "PC",
+			"Width": 18,
+			"Depth": 19,
+			"Height": 21,
+			"DimUnit": "cm",
+			"ProductPicUrl": "/images/caution-3.jpg"
+		}
+	],
+	"ProductCollectionStats": {
+		"Counts": {
+			"Total": 14,
+			"Weight": {
+				"Ok": 7,
+				"Heavy": 5,
+				"Overweight": 2
+			}
+		},
+		"Groups": {
+			"Category": {
+				"Projector": 1,
+				"Graphics Card": 2,
+				"Accessory": 4,
+				"Printer": 2,
+				"Monitor": 3,
+				"Laptop": 1,
+				"Keyboard": 1
+			},
+			"SupplierName": {
+				"Titanium": 3,
+				"Technocom": 3,
+				"Red Point Stores": 5,
+				"Very Best Screens": 3
+			}
+		},
+		"Filters": [
+			{
+				"type": "Category",
+				"values": [
+					{
+						"text": "Projector",
+						"data": 1
+					},
+					{
+						"text": "Graphics Card",
+						"data": 2
+					},
+					{
+						"text": "Accessory",
+						"data": 4
+					},
+					{
+						"text": "Printer",
+						"data": 2
+					},
+					{
+						"text": "Monitor",
+						"data": 3
+					},
+					{
+						"text": "Laptop",
+						"data": 1
+					},
+					{
+						"text": "Keyboard",
+						"data": 1
+					}
+				]
+			},
+			{
+				"type": "SupplierName",
+				"values": [
+					{
+						"text": "Titanium",
+						"data": 3
+					},
+					{
+						"text": "Technocom",
+						"data": 3
+					},
+					{
+						"text": "Red Point Stores",
+						"data": 5
+					},
+					{
+						"text": "Very Best Screens",
+						"data": 3
+					}
+				]
+			}
+		]
+	}
+}

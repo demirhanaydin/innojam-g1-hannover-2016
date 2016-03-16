@@ -1,0 +1,208 @@
+<mvc:View controllerName="jam.controller.View1"
+	xmlns="sap.m"
+	xmlns:m="sap.m"
+	xmlns:viz="sap.viz.ui5.controls"
+	xmlns:common="sap.suite.ui.commons"
+	xmlns:chart="sap.suite.ui.microchart"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+ <App id="app">
+    <pages>
+      <Page class="sapUiContentPadding" showNavButton="true"  navButtonPress="onNavToHome" title="{i18n&gt;title}">
+        <headerContent>
+          <!--<Button icon="sap-icon://action" tooltip="Share"/>-->
+        </headerContent>
+        <!--<subHeader>-->
+        <!--  <Toolbar>-->
+        <!--    <SearchField/>-->
+        <!--  </Toolbar>-->
+        <!--</subHeader>-->
+        <content>
+          <l:VerticalLayout id="containerLayout" width="100%">
+            <l:BlockLayout background="{/selectedBackground}" id="BlockLayout">
+              <l:BlockLayoutRow>
+                <l:BlockLayoutCell title="">
+                  <GenericTile class="sapUiSmallMargin" frameType="OneByOne" header="MTTR" subheader='Mean Time To Repair' press="press" size="M" width="auto">
+                    <tileContent>
+                      <TileContent footer="" size="M">
+                        <content>
+                          <NumericContent indicator="Up" scale="min" size="M" value="10" valueColor="Error"/>
+                        </content>
+                      </TileContent>
+                    </tileContent>
+                  </GenericTile>
+                  <GenericTile class="sapUiSmallMargin" frameType="OneByOne" header="MTBF" subheader='Mean time btw failures' press="press" size="M" width="auto">
+                    <tileContent>
+                      <TileContent footer="" size="M">
+                        <content>
+                          <NumericContent indicator="Down" scale="min" size="M" value="3" valueColor="Good"/>
+                        </content>
+                      </TileContent>
+                    </tileContent>
+                  </GenericTile>
+                  <!--<Panel class="sapUiResponsiveMargin">-->
+                  <!--<content>-->
+					<GenericTile class="sapUiSmallMargin" header="Machine Downtime" subheader=""
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="in Current Shift" size="M">
+								<content>
+									<NumericContent size="min" value="30" icon="sap-icon://down" valueColor="Error"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+                  <!--<Toolbar height="2rem">-->
+                  <!--  <Title text="Cost For Training"/>-->
+                  <!--</Toolbar>-->
+                  <!--<chart:BulletMicroChart class="" forecastValue="110" press="press" scale="M" size="M" targetValue="100">-->
+                  <!--  <chart:actual>-->
+                  <!--    <chart:BulletMicroChartData color="Good" value="120"/>-->
+                  <!--  </chart:actual>-->
+                  <!--  <chart:thresholds>-->
+                  <!--    <chart:BulletMicroChartData color="Error" value="0"/>-->
+                  <!--    <chart:BulletMicroChartData color="Critical" value="50"/>-->
+                  <!--    <chart:BulletMicroChartData color="Critical" value="150"/>-->
+                  <!--    <chart:BulletMicroChartData color="Error" value="200"/>-->
+                  <!--  </chart:thresholds>-->
+                  <!--</chart:BulletMicroChart>-->
+                  <!--</content>-->
+                  <!--</Panel>-->
+					<GenericTile class="sapUiSmallMargin" header="Critical Orders" subheader=""
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="in Current Shift" size="M">
+								<content>
+									<NumericContent size="M" value="15" icon="sap-icon://order-status" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+                </l:BlockLayoutCell>
+              </l:BlockLayoutRow>
+              <l:BlockLayoutRow  titleAlignment="Center">
+                <l:BlockLayoutCell title="">
+					<common:ChartContainer
+						id="idChartContainer"
+						showPersonalization="false"
+						autoAdjustHeight="false"
+						showLegend="false"
+						showLegendButton="false"
+						personalizationPress="falseAlarm"
+						showZoom="false"
+						title="Open Issues" />
+                </l:BlockLayoutCell>
+                <!--<l:BlockLayoutCell title="50% width cell">-->
+                <!--  <FeedInput showIcon="true"/>-->
+                <!--  <FeedInput showIcon="true"/>-->
+                <!--</l:BlockLayoutCell>-->
+              </l:BlockLayoutRow>
+              <l:BlockLayoutRow>
+                <l:BlockLayoutCell title="">
+					<GenericTile header="Budget" class="sapUiSmallMargin"
+					  subheader="" size="M" frameType="OneByOne" press="press">
+					  <tileContent>
+					    <TileContent footer="" unit="" size="M">
+					      <content>
+					        <chart:ComparisonMicroChart size="M" scale="M">
+					          <chart:data>
+					            <chart:ComparisonMicroChartData title="Training"
+					              value="234" color="Good" />
+					            <chart:ComparisonMicroChartData title="Spare Parts"
+					              value="97" color="Error" />
+					            <chart:ComparisonMicroChartData title="Employees"
+					              value="197" color="Error" />
+					          </chart:data>
+					        </chart:ComparisonMicroChart>
+					      </content>
+					    </TileContent>
+					  </tileContent>
+					</GenericTile>
+					<GenericTile header="Capacity" size="L" class="sapUiSmallMargin"
+					  frameType="TwoByOne" press="press" width="20em">
+					  <tileContent>
+							<TileContent footer="Electricans" size="L" view="Wide">
+								<content>
+									<chart:DeltaMicroChart size="S" press="press" value1="-40"
+										value2="60" title1="Busy" title2="Available" displayValue1="40%"
+										displayValue2="60%" deltaDisplayValue="20 Workers" color="Critical"
+										class="sapUiSmallMargin" />
+								</content>
+							</TileContent>
+							<TileContent footer="Mechanicals" size="L" view="Wide">
+								<content>
+									<chart:DeltaMicroChart size="S" press="press" value1="-10"
+										value2="90" title1="Busy" title2="Available" displayValue1="10%"
+										displayValue2="90%" deltaDisplayValue="23 Workers" color="Good"
+										class="sapUiSmallMargin" />
+								</content>
+							</TileContent>
+					  </tileContent>
+					</GenericTile>
+                  <GenericTile class="sapUiSmallMargin" frameType="OneByOne" header="Cost Overview" press="press" size="M" width="auto">
+                    <tileContent>
+                      <TileContent footer="" size="M">
+                        <content>
+                  <chart:BulletMicroChart class="" forecastValue="110" press="press" scale="M" size="M" targetValue="100">
+                    <chart:actual>
+                      <chart:BulletMicroChartData color="Good" value="120"/>
+                    </chart:actual>
+                    <chart:thresholds>
+                      <chart:BulletMicroChartData color="Error" value="0"/>
+                      <chart:BulletMicroChartData color="Critical" value="50"/>
+                      <chart:BulletMicroChartData color="Critical" value="150"/>
+                      <chart:BulletMicroChartData color="Error" value="200"/>
+                    </chart:thresholds>
+                  </chart:BulletMicroChart>
+                        </content>
+                      </TileContent>
+                    </tileContent>
+                  </GenericTile>
+					<GenericTile header="Avg Duration to Solve Issues" class="sapUiSmallMargin" subheader=""
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="in Current Shift" size="M">
+								<content>
+									<NumericContent size="M"  value="30" icon="sap-icon://down" valueColor="Error"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+                  <GenericTile class="sapUiSmallMargin" frameType="OneByOne" header="Spare Part Stock Costs" press="press" size="M" width="auto">
+                    <tileContent>
+                      <TileContent footer="" size="M">
+                        <content>
+                          <NumericContent indicator="Up" scale="€" size="M" value="354" valueColor="Good"/>
+                        </content>
+                      </TileContent>
+                    </tileContent>
+                  </GenericTile>
+	              	<GenericTile header="Most Occurred Error" class="sapUiSmallMargin" subheader="in last 24 hours"
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent size="M">
+								<content>
+									<Text text="Machine Part Defect (5)" class="sapMH2FontSize" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+                </l:BlockLayoutCell>
+              </l:BlockLayoutRow>
+            </l:BlockLayout>
+          </l:VerticalLayout>
+        </content>
+        <!--<footer>-->
+        <!--  <Toolbar>-->
+        <!--    <ToolbarSpacer/>-->
+        <!--    <Button text="Accept" type="Accept"/>-->
+        <!--    <Button text="Reject" type="Reject"/>-->
+        <!--    <Button text="Edit"/>-->
+        <!--    <Button text="Delete"/>-->
+        <!--  </Toolbar>-->
+        <!--</footer>-->
+      </Page>
+    </pages>
+  </App>
+</mvc:View>

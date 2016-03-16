@@ -1,0 +1,27 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core">
+<Dialog
+		noDataText="No Products Found"
+		title="{name}"
+		search="handleSearch"
+		confirm="handleClose"
+		close="handleClose"
+		 >
+
+      <l:VerticalLayout class="sapUiSmallMargin">
+		<ObjectStatus title="Manufacturer" text="ABB"/>
+        <ObjectStatus title="Age" text="3 years old"/>
+        <ObjectStatus title="Produced Pieces" text="7000"/>
+		<ObjectStatus title="Downtime [last week]"/>
+        <ObjectStatus title=" Min" text="5 min" state="Warning"/>
+        <ObjectStatus title=" Max" text="10 hours" state="Error"/>
+    	<ObjectStatus title="Warranty" text="May 2000 - May 2010"/>
+        <ObjectStatus title="Average Capacity Usage" text="60%"/>
+        <ObjectStatus title="Last Update" />
+        <ObjectStatus title="Spare Part Stock Status" text="In Stock" state="Warning"/>
+      	<Button text="Close" press="handleClose" />
+      </l:VerticalLayout>
+	</Dialog>
+</core:FragmentDefinition>

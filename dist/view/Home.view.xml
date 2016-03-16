@@ -1,0 +1,55 @@
+<core:View
+  controllerName="jam.controller.Home"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:l="sap.ui.layout"
+  class="mainBg">
+  <l:VerticalLayout class="sapUiMediumMargin">
+    <l:HorizontalLayout class="sapUiMediumMargin">
+      <GenericTile backgroundImage="/images/issue.jpg" frameType="TwoByOne" header="Issues" press="goToIssues">
+        <tileContent>
+          <TileContent footer="Solve current issues.">
+            <content>
+              <NewsContent contentText="" subheader=""/>
+            </content>
+          </TileContent>
+        </tileContent>
+      </GenericTile>
+    </l:HorizontalLayout>
+    <l:HorizontalLayout class="sapUiMediumMargin">
+      <GenericTile backgroundImage="/images/schedule.jpg" frameType="TwoByOne" header="Maintenance Schedule" press="goToSchedule">
+        <tileContent>
+          <TileContent footer="Schedule maintenance at the right time.">
+            <content>
+              <NewsContent contentText="" subheader=""/>
+            </content>
+          </TileContent>
+        </tileContent>
+      </GenericTile>
+    </l:HorizontalLayout>
+  </l:VerticalLayout>
+  <l:VerticalLayout class="sapUiMediumMargin">
+    <l:HorizontalLayout class="sapUiMediumMargin">
+      <GenericTile backgroundImage="/images/performance.jpg" frameType="TwoByOne" header="Performance" press="gotoReports">
+        <tileContent>
+          <TileContent footer="Measure relevant KPIs.">
+            <content>
+              <NewsContent contentText="" subheader=""/>
+            </content>
+          </TileContent>
+        </tileContent>
+      </GenericTile>
+    </l:HorizontalLayout>
+    <l:HorizontalLayout class="sapUiMediumMargin">
+      <GenericTile backgroundImage="/images/implication.jpg" frameType="TwoByOne" header="Business Implications" press="goToImplications">
+        <tileContent>
+          <TileContent footer="Important information from analytics.">
+            <content>
+              <NewsContent contentText="" subheader=""/>
+            </content>
+          </TileContent>
+        </tileContent>
+      </GenericTile>
+    </l:HorizontalLayout>
+  </l:VerticalLayout>
+</core:View>

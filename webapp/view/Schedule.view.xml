@@ -1,0 +1,62 @@
+<mvc:View height="100%" width="100%"
+    controllerName="jam.controller.Schedule" 
+    xmlns:l="sap.ui.layout" 
+    xmlns:viz="sap.viz.ui5.controls" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:suite="sap.suite.ui.commons"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page class="sapUiContentPadding" showNavButton="true"  navButtonPress="onNavToHome" title="{i18n&gt;title}">
+	<Panel width="auto" class="sapUiTinyMargin">
+	  <content>
+	    <core:Icon size="2rem" src="sap-icon://alert" class="sapUiSmallMarginEnd" />
+	      <Text text="Caution! Hans has too many tasks!" class="sapMH4FontSize" color="Error"/>
+	  </content>
+	</Panel>
+    <l:FixFlex id="idFixFlex" class="fixFlexFixedSize" minFlexSize="250">
+        <!--Below is the setting panel-->        
+        <l:fixContent>    
+            <Panel id="PN-1" class="panelStyle" expandable="true" expanded="false" headerText="Settings">
+                <ScrollContainer
+                    class="scrollStyle"
+                    height="50%"
+                    width="100%"
+                    horizontal="true"
+                    vertical="false"
+                    focusable="false">
+                    <HBox id="HB" class="settingBottomStyle" width="auto">
+                        <HBox id="HB-1" class="HBoxStyle">
+                            <VBox id="BX-1" class="boxPosition" width="90px">
+                                <Label text="Dataset" class="sapUiSmallMarginTop labelStyle" design="Bold"/>
+                                <RadioButton class="buttonPosition" id="RB1-1" groupName="waterfall-group1" text="Small"/>
+                                <RadioButton class="buttonPosition" id="RB1-2" groupName="waterfall-group1" text="Medium"  selected="true"/>
+                            </VBox>
+                            <VBox id="BX-2" class="boxPosition" width="90px">
+                                <Label text="Series" class="sapUiSmallMarginTop labelStyle" design="Bold"/>
+                                <RadioButton class="buttonPosition" id="RB2-1" enabled="false" groupName="waterfall-group2" text="1 Series" selected="true"/>
+                                <RadioButton class="buttonPosition bottomButtonStyle" id="RB2-2" enabled="false" groupName="waterfall-group2" text="2 Series"/>
+                            </VBox>
+                            <VBox id="BX-3" class="boxPosition" width="90px">
+                                <Label text="Value Label" class="sapUiSmallMarginTop labelStyle" design="Bold"/>
+                                <Switch id="SW-1" class="switchPosition" state="true" customTextOn="ON" customTextOff="OFF"></Switch>
+                            </VBox>
+                            <VBox width="90px">
+                                <Label text="Axis Title" class="sapUiSmallMarginTop labelStyle" design="Bold"/>
+                                <Switch id="SW-2" class="switchPosition" state="false" customTextOn="ON" customTextOff="OFF" enabled="false"></Switch>
+                            </VBox>
+                        </HBox>
+                    </HBox>
+                </ScrollContainer>
+            </Panel>
+        </l:fixContent>
+        <!--Above is the setting panel-->
+        <!--Below is the chart area-->
+        <l:flexContent>
+            <viz:Popover id="idPopOver"></viz:Popover>
+            <viz:VizFrame id="idVizFrameWaterfall" uiConfig="{applicationSet:'fiori'}" height="50%" width="100%"></viz:VizFrame>
+        </l:flexContent>
+        <!--Above is the chart area-->
+    </l:FixFlex>
+    </Page>
+</mvc:View>

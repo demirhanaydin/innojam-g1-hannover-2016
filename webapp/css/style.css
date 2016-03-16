@@ -1,0 +1,14 @@
+/* Enter your custom styles here */
+/*.mainBg {*/
+/*  background-color: black;*/
+/*  background-image: url(/webapp/images/background.jpg);*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*}*/
+.mainBg {
+  background-color: black;
+  background-image: url(/images/background2.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat-y;
+}
